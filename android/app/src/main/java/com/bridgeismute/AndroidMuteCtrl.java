@@ -13,7 +13,7 @@ public class AndroidMuteCtrl  extends Fragment{
     }
     public boolean isMuted(){
         AudioManager audio = (AudioManager) myContext.getSystemService(myContext.AUDIO_SERVICE);
-        if (audio.getRingerMode() ==  AudioManager.RINGER_MODE_NORMAL) return true;
-        else return false;
+        if (audio.getRingerMode() ==  AudioManager.RINGER_MODE_NORMAL) return false;
+        else return true;
     }
 }
